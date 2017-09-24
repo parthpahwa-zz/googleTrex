@@ -7,8 +7,8 @@ import os
 import win32con
 
 
-file_name = 'training_data2.npy'
-crucial_name = 'crucial_data2.npy'
+file_name = 'training_data.npy'
+crucial_name = 'crucial_data.npy'
 if os.path.isfile(file_name):
 	print('File exists, loading previous data!')
 	training_data = list(np.load(file_name))
