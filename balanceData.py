@@ -3,9 +3,7 @@ import numpy as np
 from random import shuffle
 
 train_data = np.load('training_data.npy')
-train_data2 = np.load('training_data2.npy')
 
-train_data = np.concatenate((train_data, train_data2), axis=0)
 ups = []
 downs = []
 noOp = []
