@@ -34,7 +34,6 @@ def main():
         time.sleep(1)
 
     while (True):
-        # 800x600 windowed mode
         screen = np.array(ImageGrab.grab(bbox=(0, 95, 600, 270)))
         print('loop took {} seconds'.format(time.time() - last_time))
         last_time = time.time()
