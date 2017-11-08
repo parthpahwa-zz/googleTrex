@@ -77,14 +77,12 @@ def main(verbose=0, showScreen=0):
 			prevCount += 1
 			if prevCount > 2:
 				continue
-
-			data = training_data[trainLength - 3]
-
-			training_data[trainLength - 1][1] = [1]
+			
 			training_data[trainLength - 2][1] = [1]
 			training_data[trainLength - 3][1] = [1]
 
-			crucial_data.append([data[0], [1]])
+			crucial_data.append([training_data[trainLength - 2][0], [1]])
+			crucial_data.append([training_data[trainLength - 3][0], [1]])
 
 		else:
 			prevCount = 0
